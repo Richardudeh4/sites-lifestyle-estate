@@ -1,0 +1,36 @@
+
+{
+    "houses":[
+    {"id": 1,"location":"Kamtape","area": "1500 sqft", "price": 150000000 ,"image":"./assets/house1"},
+    {"id" :2, "location": "Gwagwalada","area" : "5000 sqft", "price": 250000000,"image":"./assets/house2"},
+    {"id" :3, "location": "Gwagwalada","area" : "2500 sqft", "price": 220000000,"image":"./assets/house3"},
+    {"id" :4, "location": "Duste","area" : "3200 sqft", "price": 35500000, "image":"./assets/house4"},
+    {"id" :5, "location": "Garki","area" : "5300 sqft", "price": 4500000, "image":"./assets/house5"},
+    {"id" :6, "location": "Lugbe","area" : "5500 squft", "price": 3500000, "image":"./assets/house6"},
+    {"id" :7, "location": "Jabi","area" : "6500 sqft", "price": 5000000, "image":"./assets/house7"},
+    {"id" :8, "location": "Wuse2","area" : "7000 sqft", "price": 6500000,"image":"./assets/house8"},
+    {"id" :9, "location": "Wuse2","area" : "250 sqft", "price": 7500000, "image":"./assets/house9"},
+    {"id" :10, "location": "Wuye","area" : "355 sqft", "price": 7200000 ,"image":"./assets/house10"},
+    {"id" :11, "location": "Maitama","area" : "1225 sqft", "price": 15000000,"image":"./assets/house11"},
+    {"id" :12, "location": "Maitama","area" : "750 sqft", "price": 4500000, "image":"./assets/house12"},
+    {"id" :13, "location": "Lugbe","area" : "875 sqft", "price": 8750000,"image":"./assets/house13"},
+    {"id" :14, "location": "Kubwa","area" : "5600 sqft", "price": 2380000 ,"image":"./assets/house1"},
+    {"id" :15, "location": "Kubwa","area" : "4500 sqft", "price": 3150000, "image":"./assets/house3"},
+    {"id" :16, "location": "Garki","area" : "300 sqft", "price": 3850000 ,"image":"./assets/house4"},
+    {"id" :17, "location": "Kuje","area" : "1200 sqft", "price": 4200000, "image":"./assets/house5"},
+    {"id" :18, "location": "Lugbe","area" : "2400 sqft", "price": 51000000,"image":"./assets/house6"},
+    {"id" :19, "location": "zuba","area" : "3700 sqft", "price": 1250000,"image": "./assets/house7"},
+    {"id" :20, "location": "Gudu","area" : "5500 sqft", "price": 1350000,"image": "./assets/house8"},
+    {"id" :21, "location": "Gudu","area" : "5500 sqft", "price": 6350000,"image": "./assets/house9"},
+    {"id" :22, "location": "Apo","area" : "250 sqft", "price": 780000,"image": "./assets/house10"},
+    {"id" :23, "location": "Duste","area" : "7000 sqft", "price": 9580000, "image": "./assets/house11"},
+    {"id" :24, "location": "Kuje","area" : "3700 sqft", "price": 219000, "image": "./assets/house12"},
+    {"id" :25, "location": "Zuba","area" : "7000 sqft", "price": 512000,"image": "./assets/house13"},
+    {"id" :26, "location": "Lugbe","area" : "5300 sqft", "price": 2500000,"image": "./assets/house1"},
+    {"id" :27, "location": "Asokoro","area" : "6500 sqft", "price": 3250000,"image": "./assets/house2"},
+    {"id" :28, "location": "Duste","area" : "5600 sqft", "price": 720000 ,"image": "./assets/house3"},
+    {"id" :29, "location": "kuje","area" : "250 sqft", "price": 6120000,"image": "./assets/house4"},
+    {"id" :30, "location": "Jabi","area" : "1500 sqft", "price": 430000,"image": "./assets/house5"}
+
+] 
+}

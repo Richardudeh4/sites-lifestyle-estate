@@ -1,0 +1,30 @@
+import React from 'react';
+// import { navmenu } from '../constants';
+import { sitelogo } from '../assets';
+import Link from 'next/link';
+import Image from 'next/image';
+const Navbar = () => {
+  return (
+   <section className="py-6 px-0 ">
+<ul>
+    <li className="flex flex-1 gap-20 text-white justify-around ">
+        <div className="flex space-x-8">
+        <Link href="/Communities"> Communities</Link>
+        <Link href="/Aboutus">About us</Link>
+        <Link href="/Gallery"> Gallery</Link>
+        </div>
+        <div className="flex ">
+<Image src={sitelogo} width={200} height={200} alt="logo"/>
+        </div>
+        <div className="flex space-x-8">
+        <Link href="/Blog">Blog</Link>
+        <Link href="/Contactus">Contactus</Link>
+        <Link href="Management">Management</Link>
+        </div>
+    </li>
+    </ul>
+   </section>
+  )
+}
+
+export default Navbar

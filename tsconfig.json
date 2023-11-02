@@ -1,3 +1,11 @@
+
+// {
+//   "compilerOptions": {
+//     "paths": {
+//       "@*": ["./*"]
+//     }
+//   }
+// }
 {
   "compilerOptions": {
     "target": "es5",
@@ -22,6 +30,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/firebaseConfig.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/firebaseConfig.ts", "tailwind.config.ts"],
   "exclude": ["node_modules"]
 }
