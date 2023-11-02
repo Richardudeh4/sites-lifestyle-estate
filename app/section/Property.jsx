@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import {vector} from '../assets'
+import {Vector} from '../assets'
 import Button from '../component/Button'
 const Property = ({img, area, location, bedroom, floor,price, floorPlan}) => {
     return(
@@ -33,7 +33,7 @@ const Property = ({img, area, location, bedroom, floor,price, floorPlan}) => {
                     ))
                 }
 
-            <Button label="Search" iconUrl={vector} />
+            <Button label="Search" iconUrl={Vector} />
             </div>
         </section>
     )
