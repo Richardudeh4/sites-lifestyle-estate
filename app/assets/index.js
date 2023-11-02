@@ -17,7 +17,7 @@ import side2 from './side2.svg';
 import facebook from './facebook.svg';
 import instagram from './instagram.svg';
 import twitter from './twitter.svg';
-import vector from './vector.svg';
+import Vector from './Vector.svg';
 export {
 sitelogo,
 house1,
@@ -38,5 +38,5 @@ side2,
 facebook,
 instagram,
 twitter,
-vector
+Vector
 }
