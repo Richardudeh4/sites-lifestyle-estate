@@ -1,5 +1,5 @@
-import { house3, house5, house4, house1} from "../assets";
-import { house2,house6,house7,house8, facebook, twitter, instagram} from "../assets";
+
+import { property1 , property2, property3, property4, property5, property6, property7, property8, property9, property10,property11, property12,facebook, twitter, instagram} from "../assets";
 
 export const navmenu = [
 {title:'Communities', href: '/Communities'},
@@ -10,22 +10,22 @@ export const navmenu = [
 {title:'Management' , href: 'Management'}
 ]
 export const house = [
-    {name:'Green Oaks', desc: 'At Sites & Lifestyle, we redefine the very essence of excellence in home ownership. We dont just sell properties; we craft lifestyles.', image : house5},
-    {name: 'Belvedere', desc: 'At Sites & Lifestyle, we redefine the very essence of excellence in home ownership. We dont just sell properties; we craft lifestyles.', image: house8},
-    {name: 'Ivywood Manor',desc: 'At Sites & Lifestyle, we redefine the very essence of excellence in home ownership. We dont just sell properties; we craft lifestyles.', image:house3}
+    {name:'Green Oaks', desc: 'At Sites & Lifestyle, we redefine the very essence of excellence in home ownership. We dont just sell properties; we craft lifestyles.', image : property1},
+    {name: 'Belvedere', desc: 'At Sites & Lifestyle, we redefine the very essence of excellence in home ownership. We dont just sell properties; we craft lifestyles.', image: property2},
+    {name: 'Ivywood Manor',desc: 'At Sites & Lifestyle, we redefine the very essence of excellence in home ownership. We dont just sell properties; we craft lifestyles.', image:property3}
 ]
 export const images = [
-    {images: house8},
-    {images: house6},
-    {images: house7},
-    {images:house8}
+    {images: property4},
+    {images: property5},
+    {images: property6},
+    {images: property7}
 ]
 export const community = [
-    {image:house1, HouseName: "Regal Haven", Location: "Abuja"},
-    {image:house2, HouseName: "Ivywood Manor", Location: "Abuja"},
-    {image:house3, HouseName: "Noblewood Ridge", Location: "Abuja"},
-    {image:house4, HouseName: "Azure Meadows", location:"Abuja"},
-    {image:house5, HouseName: "Edenview", location: "Abuja"}
+    {image:property8, HouseName: "Regal Haven", Location: "Abuja"},
+    {image:property9, HouseName: "Ivywood Manor", Location: "Abuja"},
+    {image:property10, HouseName: "Noblewood Ridge", Location: "Abuja"},
+    {image:property11, HouseName: "Azure Meadows", Location:"Abuja"},
+    {image:property12, HouseName: "Edenview", Location: "Abuja"}
 ]
 
 export const FooterLink = [

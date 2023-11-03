@@ -2,10 +2,14 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 import Property from './Property';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 import {propertyProps} from '../constants';
 
 
-const Modal = async (filter) => {
+const Modal = () => {
   
   const [data, setData] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState('all');
@@ -27,34 +31,52 @@ const Modal = async (filter) => {
   };
 
   return (
-   <section className="mt-10">
-    <div className=" flex-1 border border-l-2 flex justify-center space-x-10 border-l-slate-300 ">
+   <section className="mt-2">
+    <div className=" flex-1 border flex justify-around space-x-10  ">
     {
       propertyProps.map((item,i) => (
         <div key={i}>
-          <h1 className="font-semibold mt-6 text-center">{item.name}</h1>
-          <div className="pt-10">
-    <select 
+      <FormControl sx={{ m: 1, minWidth: 250 }} size="small">
+        <InputLabel id="demo-select-small-label">{item.name}</InputLabel>
+      <Select
+        labelId="demo-select-small-label"
+        id="filteredData"
+        value={selectedFilter}
+        label="items"
+        onChange={(e) => setSelectedFilter(e.target.value)}
+      >
+        
+         
+    {/* <select 
     placeholder='Select option'
     id="filterSelect"
     value={selectedFilter}
-    onChange={(e) => setSelectedFilter(e.target.value)}
-    >
-<option value="all">All</option>
+  
+    > */}
+    
+    <MenuItem value="">
+          <em>All</em>
+        </MenuItem>
+        <MenuItem value='option1'>{item.property.item1}</MenuItem>
+        <MenuItem value= 'option2'>{item.property.item2}</MenuItem>
+        <MenuItem value= 'option3'>{item.property.item3}</MenuItem>
+      </Select>
+{/* <option value="all">All</option>
 <option value='option1' >{item.property.item1}</option>
 <option value='option2'>{item.property.item2}</option>
 <option value='option3' >{item.property.item3}</option>
-</select>
-</div>
+</select> */}
+
+</FormControl>
  </div>
       ))
     }
     </div>
 
     <div id="filteredData">
-        {data.map((item) => (
-          <div key={item.id}>
-        <h1>{item.area}</h1>
+        {data.map(({image, area, location,price},i) => (
+          <div key={i}>
+       <Property image={image} area={area} location={location} price={price}/>
           </div>
         ))}
       </div>
@@ -64,3 +86,9 @@ const Modal = async (filter) => {
 }
 
 export default Modal
+
+
+
+
+
+

@@ -13,8 +13,8 @@ const Latest = () => {
 {
 house.map((item,index)=> (
 <div key={index}>
-    <div className='relative'>
-<Image src={item.image} alt="property images" width={250} height={250}/>
+    <div className='relative w-[315px] h-[324px]'>
+<Image src={item.image} alt="property images" layout="fill" objectFit='cover'/>
 </div>
 <h1 className="pt-8 font-semibold text-xl  text-[#0F372F]">{item.name}</h1>
 <p className=" font-thin pt-6">{item.desc}</p>
