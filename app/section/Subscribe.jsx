@@ -6,7 +6,7 @@ const Subscribe = () => {
       id='contact-us'
       className=' flex justify-between items-center max-lg:flex-col py-10 gap-10'
     >
-      <h3 className='text-4xl leading-[68px] lg:max-w-md text-white font-palanquin font-bold'>
+      <h3 className='text-4xl leading-[68px] lg:max-w-md text-gray-400 md:text-white font-palanquin font-bold'>
         Subscribe to our Newsletter
       </h3>
       <div className='lg:max-w-[40%] w-full flex justify-between bg-white items-center max-sm:flex-col p-2.5 sm:border sm:border-slate-gray'>

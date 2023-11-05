@@ -25,7 +25,7 @@ community.map((item,index) => (
     <div key={index}>
     <div className="m-0">
       <div className="w-[374px] h-[417px] relative">
-        <Image src={item.image} alt="community images" layout="fill" objectFit="cover"/>
+        <Image src={item.image} alt="community images" layout="fill" objectFit="cover" />
         </div>
         <div className="pt-6 flex space-x-4 text-[#0F372F]">
 <h1 className="text-bold">{item.HouseName}</h1> &nbsp; |&nbsp;<p>{item.Location}</p>

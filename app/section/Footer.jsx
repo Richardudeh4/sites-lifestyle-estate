@@ -16,13 +16,13 @@ const Footer = () => {
               className='m-0'
             /> */}
           </a>
-          <p className='mt-6 text-base leading-7 font-montserrat text-white sm:max-w-sm'>
+          <p className='mt-6 text-base leading-7 font-montserrat text-gray-400 md:text-white sm:max-w-sm'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis necessitatibus voluptatum animi temporibus, in placeat et, sunt fugiat ratione ullam alias nobis repellat doloremque molestias officiis dicta excepturi voluptates assumenda!
           </p>
           <div className='flex items-center gap-5 mt-8'>
             {socialMedia.map((icon) => (
               <div
-                className='flex justify-center items-center w-12 h-12 bg-white rounded-full'
+                className='flex justify-center items-center w-12 h-12 text-white md:text-black bg-gray-400 md:bg-white rounded-full'
                 key={icon.alt}
               >
                 <Image src={icon.src} alt={icon.alt} width={24} height={24} />
@@ -34,13 +34,13 @@ const Footer = () => {
         <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap'>
           {FooterLink.map((section) => (
             <div key={section.title}>
-              <h4 className='font-montserrat text-2xl leading-normal font-medium mb-6 text-white'>
+              <h4 className='font-montserrat text-2xl leading-normal font-medium mb-6 text-gray-400 md:text-white'>
                 {section.title}
               </h4>
               <ul>
                 {section.links.map((link) => (
                   <li
-                    className='mt-3 font-montserrat text-base leading-normal text-white hover:text-slate-gray'
+                    className='mt-3 font-montserrat text-base leading-normal text-gray-400 md:text-white hover:text-slate-gray'
                     key={link.name}
                   >
                     <a href={link.link}>{link.name}</a>

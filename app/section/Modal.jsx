@@ -10,7 +10,11 @@ import {propertyProps} from '../constants';
 
 
 const Modal = () => {
-  
+  const [location,setLocation] = useState("");
+const [price,setPrice] = useState("");
+const [land,setLand] = useState("");
+const [house,setHouse] = useState("");
+const [property,setProperty] = useState(null);
   const [data, setData] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState('all');
 
@@ -30,20 +34,28 @@ const Modal = () => {
     }
   };
 
-  return (
+  const filterHandler =()=>{
+    setProperty(()=>{
+      return [{location:location,price:price,}]
+    })
+    }
+return (
    <section className="mt-2">
     <div className=" flex-1 border flex justify-around space-x-10  ">
     {
-      propertyProps.map((item,i) => (
+      propertyProps?.map((item,i) => (
         <div key={i}>
-      <FormControl sx={{ m: 1, minWidth: 250 }} size="small">
-        <InputLabel id="demo-select-small-label">{item.name}</InputLabel>
+      <FormControl sx={{ m: 1, minWidth: 200 }} size="small">
+        <InputLabel id="demo-select-small-label">{item?.title}</InputLabel>
       <Select
         labelId="demo-select-small-label"
         id="filteredData"
         value={selectedFilter}
         label="items"
-        onChange={(e) => setSelectedFilter(e.target.value)}
+        onChange={(e) =>{ 
+          setLocation(e.target.value)
+          setSelectedFilter(e.target.value)}
+        }
       >
         
          
@@ -57,9 +69,8 @@ const Modal = () => {
     <MenuItem value="">
           <em>All</em>
         </MenuItem>
-        <MenuItem value='option1'>{item.property.item1}</MenuItem>
-        <MenuItem value= 'option2'>{item.property.item2}</MenuItem>
-        <MenuItem value= 'option3'>{item.property.item3}</MenuItem>
+        <MenuItem value='option1'>{item?.option?.values}</MenuItem>
+   
       </Select>
 {/* <option value="all">All</option>
 <option value='option1' >{item.property.item1}</option>
@@ -74,7 +85,7 @@ const Modal = () => {
     </div>
 
     <div id="filteredData">
-        {data.map(({image, area, location,price},i) => (
+        {data?.map(({image, area, location,price},i) => (
           <div key={i}>
        <Property image={image} area={area} location={location} price={price}/>
           </div>
