@@ -4,8 +4,8 @@ import Image from 'next/image';
 const Communities = () => {
   return (
     <div>
-     <div className="py-8 px-8">
-        <div className="mt-8 mx-4 gap-6">
+     <div className="py-8">
+        <div className="mt-8 gap-6">
         <div>
 <h1 className="text-2xl -mt-8 font-semibold">Communities</h1>
 </div>
@@ -21,8 +21,8 @@ Learn More
 </div>
 
 {
-community.map((item,index) => (
-    <div key={index}>
+community.map((item,i) => (
+    <div key={i}>
     <div className="m-0">
       <div className="w-[374px] h-[417px] relative">
         <Image src={item.image} alt="community images" layout="fill" objectFit="cover" />

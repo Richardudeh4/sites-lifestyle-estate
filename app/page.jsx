@@ -22,7 +22,7 @@ const page = () => {
        <section className="padding-x py-10">
         <Gallery className="w-full"/>
        </section>
-       <section  className="bg-[#D9D9D9] padding">
+       <section  className="bg-[#D9D9D9] padding-x">
         <Communities />
        </section>
        <section className="sm:bg-[#B1935C] bg-white padding-x">

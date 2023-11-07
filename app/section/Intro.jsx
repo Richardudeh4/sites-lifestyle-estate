@@ -3,8 +3,8 @@ import Image from 'next/image';
 import {side1,side2} from '../assets'
 const Intro = () => {
   return (
-    <section className="grid grid-cols-2 border-l-2 py-12 border-l-white">
-<div className="bg-white relative ml-20">
+    <section className="grid grid-rows-1 sm:grid-cols-2 border-l-2 py-12 mx-2 border-l-white">
+<div className="bg-white w-[344px]h-[377px] sm:w-[374px] sm:h-[417px] relative ml-20">
   <Image src={side2} layout="fill"  alt="house-side" className="" />
 </div>
 <div className="text-center items-center py-24 px-12 text-white text-[20px] leading-[#27.32px] bg-[#0F372F]">
