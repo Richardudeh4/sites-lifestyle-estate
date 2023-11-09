@@ -53,6 +53,7 @@ const Modal = () => {
   };
 
   return (
+
     <div>
     <div className='py-8 px-8 flex space-x-10 justify-center'>
     
@@ -78,8 +79,28 @@ const Modal = () => {
         className="w-48 border-transparent outline-none border rounded-none"
       >
         <option value="">Price Range</option>
-        <option value="100000">100,000+</option>
-        <option value="200000">200,000+</option>
+        <option value="150000000">(NGN)150 Million</option>
+<option value="250000000">(NGN)250 Million</option>
+<option value="220000000">(NGN)220 Million</option>
+ <option value="35500000">(NGN)35.5 Million</option>
+<option value="4500000">(NGN) 4.5 Million</option>
+<option value="3500000">(NGN) 3.5 Million</option>
+<option value="5000000">(NGN) 5 Million</option>
+<option value="6500000">(NGN) 6.5 Million</option>
+<option value="7500000">(NGN) 7.5 Million</option>
+<option value="7200000">(NGN) 7.2 Million</option>
+<option value="15000000">(NGN) 15 Million</option>
+<option value="4500000">(NGN) 4.5 Million</option>
+<option value="8750000">(NGN) 8.75 Million</option>
+<option value="7500000">(NGN) 7.5 Milliion</option>
+ {/* 7500000
+7200000
+15000000
+4500000
+ 8750000
+2380000
+3150000 */}
+    
       </select>
 
       <select
@@ -88,8 +109,24 @@ const Modal = () => {
         className="w-48 border-transparent outline-none  border rounded-none"
       >
         <option value="">Area</option>
-        <option value="100">100+</option>
-        <option value="200">200+</option>
+        <option value="250">250</option>
+        <option value="300">300</option>
+        <option value="355">355 Square feet</option>
+        <option value="1200">1200 Square feet</option>
+          <option value="1225">1225 Square feet</option>
+          <option value="1500">1500 Square feet</option>
+          <option value="2400">2400 Square feet</option>
+            <option value="355">355 Square feet</option>
+            <option value="2500">2500 Square feet</option>
+            <option value="3200">3200 Square feet</option>
+            <option value="3700">3700 Square feet</option>
+            <option value="4500">4500 Square feet</option>
+            <option value="5000">5000 Square feet</option>
+            <option value="5300">5300 Square feet</option>
+            <option value="5500">5500 Square feet</option>
+            <option value="5600">5600 Square feet</option>
+            <option value="6500">6500 Square feet</option>
+             <option value="7000">7000 Square feet</option>
       </select>
 
       <select
@@ -98,8 +135,12 @@ const Modal = () => {
         className="w-48 border-transparent border outline-none  rounded-none"
       >
         <option value="">Property Type</option>
-        <option value="house">House</option>
-        <option value="apartment">Apartment</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Duplex">Duplex</option>
+        <option value="Flat">Flat</option>
+          <option value="Land">Land</option>
+          <option value="Storey Building">Storey Building</option>
+          
       </select>
 
       <select
@@ -111,10 +152,19 @@ const Modal = () => {
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+   
       </select>
-<Link href='/Property'>
-      <button onClick={handleSearch} className="px-8 text-white py-4 border border-white bg-[#B1935C] flex flex-end">Search</button>
-      </Link>
+ <button onClick={handleSearch} className="px-8 text-white py-4 border border-white bg-[#B1935C] flex flex-end">Search</button>
+   <div>
+    {filteredData?.length > 0 && filteredData?.map((item,i)=> (
+      <div key={i}>
+<h1 className="text-center">{item.location}</h1>
+      </div>
+    ))}
+    </div> 
      
 </div>
     </div>
@@ -123,131 +173,11 @@ const Modal = () => {
 
 export default Modal;
 
-//       </select>
-//   );
-// };
 
 
 
 
 
-//   const handleSearch = async () => {
-//     const query = new URLSearchParams({
-//       location: locationDropdownValue,
-//       price: priceDropdownValue,
-//       area: areaDropdownValue,
-//       property_type: propertyTypeDropdownValue,
-//       bedroom: bedroomDropdownValue,
-//     });
 
-//     const response = await axios.get(
-//       `https://jsonplaceholder.typicode.com/users?${query.toString()}`
-//     );
-
-//     setFilteredData(response.data);
-//   };
-
-//   return (
-    
-
-//       <select
-//         value={priceDropdownValue}
-//         onChange={handlePriceDropdownChange}
-//       >
-//         <option value="">All</option>
-//         <option value="100000">100,000+</option>
-//         <option value="200000">200,000+</option>
-//       </select>
-
-//       <select
-//         value={areaDropdownValue}
-//         onChange={handleAreaDropdownChange}
-//       >
-//         <option value="">All</option>
-//         <option value="100">100+</option>
-//         <option value="200">200+</option>
-//       </select>
-
-//       <select
-//         value={propertyTypeDropdownValue}
-//         onChange={handlePropertyTypeDropdownChange}
-//       >
-//         <option value="">All</option>
-//         <option value="house">House</option>
-//         <option value="apartment">Apartment</option>
-//       </select>
-
-//       <select
-//         value={bedroomDropdownValue}
-//         onChange={handleBedroomDropdownChange}
-//       >
-//         <option value="">All</option>
-//         <option value="1">1</option>
-//         <option value="2">2</option>
-//         <option value="3">3</option>
-//       </select>
-
-//       <button onClick={handleSearch}>Search</button>
-//     </div>
-//   );
-// };
-
-// export default FilterComponent;
-
-
-
-//   const [location,setLocation] = useState("");
-// const [price,setPrice] = useState("");
-// const [land,setLand] = useState("");
-// const [house,setHouse] = useState("");
-// const [property,setProperty] = useState(null);
-//   const [data, setData] = useState([]);
-//   const [selectedFilter, setSelectedFilter] = useState('all');
-
-//   useEffect(() => {
-//     fetchData(selectedFilter);
-//   }, [selectedFilter]);
-
-//   const fetchData = async (filter) => {
-//     try {
-//       const response = await fetch(`http://localhost:8000/houses/data?catergory=${filter}`);
-//       if (response.ok) {
-//         const data = await response.json();
-//         setData(data);
-//       }
-//     } catch (error) {
-//       console.error('Error fetching data:', error);
-//     }
-//   };
-
-//   const filterHandler =()=>{
-//     setProperty(()=>{
-//       return [{location:location,price:price, bedroom:bedroom, area:area}]
-//     })
-//     }
-// return (
-//    <section className="mt-2">
-//     <div className=" flex-1 border flex justify-around space-x-10  ">
-     
-//     {
-//       propertyProps?.map((item,i) => (
-//         <div key={i}>
-//           <label htmlFor="dropdown">{item.title} </label>
-//         <select id="dropdown" value="" className='w-20'>
-//         <option value="">{item?.title}</option>
-//         <option  value="">{item?.option?.values}</option>
-       
-//       </select>
-//       </div>
-//       ))
-    
-//     }
-//     </div>
-
-   
-//    </section>
-
-//   )
-// }
 
 

@@ -1,7 +1,9 @@
-import React from 'react'
+"use client";
+import React,{useState} from 'react'
 import { community } from '../constants';
 import Image from 'next/image';
 const Communities = () => {
+  const [loading, setLoading] = useState(true);
   return (
     <div>
      <div className="py-8">
@@ -24,11 +26,17 @@ Learn More
 community.map((item,i) => (
     <div key={i}>
     <div className="m-0">
-      <div className="w-[374px] h-[417px] relative">
-        <Image src={item.image} alt="community images" layout="fill" objectFit="cover" />
+      <div className="w-[344px] h-[397px] md:w-[354px] md:h-[407px] sm:w-[374px] sm:h-[417px] relative">
+        <Image src={item.image} alt="community images" layout="fill" objectFit="cover"
+        className={`object-contain duration-700 ease-in-out group-hover:opacity-75 ${
+          loading? "scale-110 blur-2xl grayscale" : 
+            "scale-100 blur-0 grayscale-0"
+}`}
+onLoadingComplete={() => setLoading(false)}
+          />
         </div>
         <div className="pt-6 flex space-x-4 text-[#0F372F]">
-<h1 className="text-bold">{item.HouseName}</h1> &nbsp; |&nbsp;<p>{item.Location}</p>
+<h1 className="text-bold">{item.HouseName} &nbsp; | </h1> &nbsp;<p>{item.Location}</p>
         </div>
         
     </div>

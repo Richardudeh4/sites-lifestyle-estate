@@ -10,7 +10,7 @@ const page = () => {
     return(
        <main className="relative">
         {/* hero section */}
-       <section className='bg-[#0F372F] xl:padding-l wide:padding-r padding-b'>
+       <section className='bg-[#0F372F]  wide:padding-r padding-b'>
         <Hero/>
       </section>
        <section className='grid-cols-2'>

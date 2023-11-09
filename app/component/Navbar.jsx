@@ -9,17 +9,17 @@ const Navbar = () => {
 <ul>
     <li className="flex flex-1 gap-20 text-white justify-around ">
         <div className="flex space-x-8">
-        <Link href="/Communities"> Communities</Link>
-        <Link href="/Aboutus">About us</Link>
-        <Link href="/Gallery"> Gallery</Link>
+        <Link href="/Communities" className="heading"> Communities</Link>
+        <Link href="/Aboutus" className="heading">About us</Link>
+        <Link href="/Gallery" className="heading"> Gallery</Link>
         </div>
-        <div className="flex ">
-<Image src={sitelogo} width={200} height={200} alt="logo"/>
+        <div className="flex">
+<Image src={sitelogo} width={200} height={200} alt="logo" className="text-center"/>
         </div>
         <div className="flex space-x-8">
-        <Link href="/Blog">Blog</Link>
-        <Link href="/Contactus">Contactus</Link>
-        <Link href="Management">Management</Link>
+        <Link href="/Blog" className="heading">Blog</Link>
+        <Link href="/Contactus" className="heading">Contactus</Link>
+        <Link href="Management" className="heading">Management</Link>
         </div>
     </li>
     </ul>
