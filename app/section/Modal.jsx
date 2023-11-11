@@ -93,6 +93,12 @@ const Modal = () => {
 <option value="4500000">(NGN) 4.5 Million</option>
 <option value="8750000">(NGN) 8.75 Million</option>
 <option value="7500000">(NGN) 7.5 Milliion</option>
+<option value="7200000">(NGN) 7.2 Million</option>
+<option value="15000000">(NGN) 15 Million</option>
+<option value="4500000">(NGN) 4.5 Million</option>
+<option value="8750000">(NGN) 8.75 Million</option>
+<option value="2380000">(NGN) 2.38 Million</option>
+<option value="3150000">(NGN) 3.15 Million</option>
  {/* 7500000
 7200000
 15000000
